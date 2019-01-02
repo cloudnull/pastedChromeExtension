@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "UrbanDictionary Search",
-  "short_name": "Search",
-  "description": "Searches for the selected text in the UrbanDictionary",
-  "version": "0.0.1",
+  "name": "Pasted Chrome Extension",
+  "short_name": "PCE",
+  "description": "Paste content from within a browser window with the power of right clicks",
+  "version": "0.0.3",
   "minimum_chrome_version": "38",
   "permissions": [
-    "contextMenus", 
-    "tabs"],
+    "contextMenus",
+    "activeTab",
+    "https://pasted.tech/*"
+  ],
   "icons": {
-    "16": "assets/search.png"
+    "16": "assets/pencil.png"
   },
-  "background": {"page": "background.html"}
+  "background": {
+    "page": "background.html"
+  }
 }

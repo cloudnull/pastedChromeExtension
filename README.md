@@ -1,2 +1,4 @@
-# SearchTool
-A simple chrome extension that let's you search for the selected text in UrbanDictionary.
+# pastedChromeExtension
+
+The pasted chrome extension allows you to paste content from within a browser
+window by simply highlighting text and right clicking.
