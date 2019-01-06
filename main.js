@@ -62,18 +62,8 @@ postPasted = function (word) {
   });
 };
 
-// Set up context menu at install time.
-chrome.runtime.onInstalled.addListener(function () {
-  var context = ["selection"];
-  var title = "Post content to pasted.tech";
-  var id = chrome.contextMenus.create(
-    {
-      "title": title,
-      "contexts": context,
-      "id": "context" + context[0]
-    }
-  );
-  return id;
+chrome.contextMenus.create({
+  title: "Post content to pasted.tech",
+  contexts:["selection"],
+  onclick: postPasted
 });
-
-chrome.contextMenus.onClicked.addListener(postPasted);
